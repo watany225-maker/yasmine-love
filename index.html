@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى ياسمين ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top,#3a1027,#120814 65%,#070509);color:#fff;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:linear-gradient(120deg,rgba(255,80,140,.08),transparent 45%,rgba(255,180,210,.06));pointer-events:none}
+.hearts span{position:fixed;bottom:-30px;font-size:20px;animation:float 8s linear infinite;opacity:.5;z-index:0}.hearts span:nth-child(1){left:8%;animation-delay:0s}.hearts span:nth-child(2){left:25%;animation-delay:2s}.hearts span:nth-child(3){left:48%;animation-delay:4s}.hearts span:nth-child(4){left:70%;animation-delay:1s}.hearts span:nth-child(5){left:88%;animation-delay:3s}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:25px;position:relative;z-index:1}
+.card{width:min(560px,94vw);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(15px);border-radius:28px;padding:34px;text-align:center;box-shadow:0 20px 70px #0008}
+h1{font-size:40px;margin:5px 0 15px;color:#ffd2e3}h2{color:#ffc0d8}p{line-height:2}
+input{width:100%;padding:15px;border:1px solid #ffffff35;border-radius:15px;background:#0005;color:#fff;font-size:18px;text-align:center;outline:none}
+button{border:0;border-radius:15px;padding:13px 24px;background:linear-gradient(135deg,#ff4f93,#c72d70);color:white;font-size:17px;cursor:pointer;margin-top:14px;box-shadow:0 8px 25px #ff2d7540}
+#error{color:#ffb6d0;min-height:28px;margin-top:12px}.hidden{display:none!important}
+main{max-width:900px;margin:auto;padding:55px 18px;position:relative;z-index:1}.hero{text-align:center;padding:45px 0 25px}.hero h1{font-size:52px}.subtitle{font-size:19px;color:#ffd6e4}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px 0}.unit{background:#ffffff0d;border:1px solid #ffffff14;border-radius:18px;padding:16px}.num{font-size:30px;font-weight:bold;color:#ff9fc1}.label{font-size:12px;color:#ddd}
+.section{margin:28px 0;padding:28px;border-radius:25px;background:#ffffff08;border:1px solid #ffffff12}.typing{font-size:20px;line-height:2.1;min-height:160px;color:#ffe8f0}
+.dates{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.date{padding:12px 18px;border-radius:15px;background:#0004}
+.music{display:flex;align-items:center;gap:15px;justify-content:center}.disc{width:55px;height:55px;border-radius:50%;background:radial-gradient(circle,#222 0 12%,#ff5b99 13% 45%,#333 46% 50%,#ff8bb6 51%);animation:spin 4s linear infinite;animation-play-state:paused}.disc.playing{animation-play-state:running}@keyframes spin{to{transform:rotate(360deg)}}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.photo{aspect-ratio:1;border-radius:17px;overflow:hidden;background:linear-gradient(135deg,#ff709f,#5a193b);display:flex;align-items:center;justify-content:center;font-size:45px}
+.final{text-align:center;padding:70px 10px 100px}.final h2{font-size:32px}
+@media(max-width:600px){.counter{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:40px}.gallery{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="hearts"><span>❤️</span><span>💗</span><span>💕</span><span>💖</span><span>❤️</span></div>
+
+<section id="lock" class="screen">
+<div class="card">
+<div style="font-size:55px">🔐❤️</div>
+<h1>إلى ياسمين</h1>
+<p>المكان ده ليكي إنتي بس...<br>ادخلي الباسورد عشان تفتحي رسالتي ❤️</p>
+<input id="pass" type="password" placeholder="اكتبي الباسورد">
+<button onclick="unlock()">دخول ❤️</button>
+<div id="error"></div>
+</div>
+</section>
+
+<main id="site" class="hidden">
+<section class="hero">
+<div style="font-size:45px">🌹</div>
+<h1>ياسمين ❤️</h1>
+<div class="subtitle">من أول يوم عرفتك فيه، وكل يوم بعده ليه مكان عندي.</div>
+<div class="counter">
+<div class="unit"><div class="num" id="days">0</div><div class="label">يوم</div></div>
+<div class="unit"><div class="num" id="hours">0</div><div class="label">ساعة</div></div>
+<div class="unit"><div class="num" id="mins">0</div><div class="label">دقيقة</div></div>
+<div class="unit"><div class="num" id="secs">0</div><div class="label">ثانية</div></div>
+</div>
+</section>
+
+<section class="section">
+<h2>💌 رسالتي ليكي</h2>
+<div class="typing" id="typing"></div>
+</section>
+
+<section class="section">
+<h2>📅 تواريخ مش هتنسيها</h2>
+<div class="dates">
+<div class="date">بداية العلاقة ❤️<br><b>11 / 7 / 2025</b></div>
+<div class="date">أول مرة قلتيلي بحبك 💕<br><b>11 / 7 / 2025</b></div>
+</div>
+</section>
+
+<section class="section">
+<h2>🎵 أغنيتنا</h2>
+<div class="music">
+<div class="disc" id="disc"></div>
+<div>
+<div>الخصام ممنوع — رامز جلال</div>
+<button id="playBtn" onclick="toggleMusic()">▶ تشغيل</button>
+</div>
+</div>
+<audio id="audio" loop preload="none">
+<!-- ضع ملف الأغنية باسم song.mp3 بجوار ملف index.html -->
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+<p style="font-size:12px;color:#bbb">الأغنية مضافة بالفعل ❤️ اضغطي تشغيل واسمعيها.</p>
+</section>
+
+<section class="section">
+<h2>📸 صور حب</h2>
+<div class="gallery">
+<div class="photo">❤️</div><div class="photo">🌹</div><div class="photo">💞</div>
+<div class="photo">💖</div><div class="photo">🥰</div><div class="photo">💕</div>
+</div>
+<p style="font-size:12px;color:#bbb">تقدر تستبدل الصور دي بصوركم بسهولة داخل الكود.</p>
+</section>
+
+<section class="final">
+<div style="font-size:55px">❤️</div>
+<h2>مهما حصل، هتفضلي أجمل حاجة حصلتلي.</h2>
+<p>حقك عليا يا ياسمين... ❤️</p>
+</section>
+</main>
+
+<script>
+const PASSWORD="28/1/2005";
+const start=new Date("2025-07-11T00:00:00");
+const message="حقك عليا. أتمنى تسامحيني، أنا اتربيت وبجد توبة. متزعليش مني يا ياسمين. أنا غلط وحقك تزعلي، بس أنا نفسي تسامحيني. حقك عليا ❤️";
+
+function unlock(){
+ const val=document.getElementById("pass").value;
+ const err=document.getElementById("error");
+ if(val===PASSWORD){
+  document.getElementById("lock").classList.add("hidden");
+  document.getElementById("site").classList.remove("hidden");
+  typeMessage(); updateCounter(); setInterval(updateCounter,1000);
+ }else{
+  err.textContent="الباسورد غلط... جربي تاني يا ياسمين، الرسالة مستنياكي ❤️";
+  document.getElementById("pass").value="";
+ }
+}
+function updateCounter(){
+ let diff=Math.max(0,Date.now()-start.getTime());
+ let sec=Math.floor(diff/1000);
+ let days=Math.floor(sec/86400); sec%=86400;
+ let hours=Math.floor(sec/3600); sec%=3600;
+ let mins=Math.floor(sec/60); sec%=60;
+ document.getElementById("days").textContent=days;
+ document.getElementById("hours").textContent=hours;
+ document.getElementById("mins").textContent=mins;
+ document.getElementById("secs").textContent=sec;
+}
+function typeMessage(){
+ const el=document.getElementById("typing");let i=0;
+ const timer=setInterval(()=>{el.textContent=message.slice(0,i++);if(i>message.length)clearInterval(timer)},55);
+}
+function toggleMusic(){
+ const a=document.getElementById("audio"),b=document.getElementById("playBtn"),d=document.getElementById("disc");
+ if(a.paused){a.play().then(()=>{b.textContent="⏸ إيقاف";d.classList.add("playing")}).catch(()=>{b.textContent="ضع song.mp3 أولاً 🎵"})}
+ else{a.pause();b.textContent="▶ تشغيل";d.classList.remove("playing")}
+}
+</script>
+</body>
+</html>
